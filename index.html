@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Gates of Fish</h1>
+    <h2>Bum</h2>
+  </header>
+
+  <main>
+    <!-- Infoskærmen -->
+    <section id="infoScreen">
+      <div class="fishContainer">
+        <!-- Her viser vi med js lol-->
+      </div>
+    </section>
+
+    <!-- Character selection  -->
+    <section id="characterSelect" class="hidden">
+      <button id="chooseFish" class="cta">Vælg</button>
+      <div class="characterContainer">
+        <!-- Karakterer fisk -->
+      </div>
+    </section>
+
+    <section id="gameScreen" class="hidden">
+      <!-- Tilføj class="hidden" -->
+      <!-- selveste spillet type shit -->
+      <canvas id="gameCanvas"></canvas>
+      <button id="backToMenu" class="cta">Afslut spil</button>
+    </section>
+  </main>
+
+  <footer>
+    <!-- info og sådan noget nonchalant noget -->
+    <button id="startBtn" class="cta">Start spil</button>
+  </footer>
+
+  <div id="fishModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2 id="modalName"></h2>
+      <video id="modalVideo" controls autoplay></video>
+      <p id="modalSize"></p>
+      <p id="modalFact1"></p>
+      <p id="modalFact2"></p>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
