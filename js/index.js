@@ -160,6 +160,8 @@ backToMenu.addEventListener("click", function () {
   startBtn.classList.remove("hidden");
 });
 
+// character array af fiskene
+
 const characters = [
   {
     characName: "Kuglefisk",
@@ -206,6 +208,8 @@ const characters = [
 let selectedFishIndex = 0;
 
 const fishContainer = document.getElementById("infoScreen");
+
+// placering af fiskene på infoskærm
 
 const positions = {
   Kejserfisk: { left: "10%", top: "20%" },
@@ -310,13 +314,12 @@ const fishImg = new Image();
 const starImg = new Image();
 starImg.src = "img/points.svg";
 
-// ---------- SPILLE FUNKTIONEERRRRRRR-----------
+// ---------- SPILLE FUNKTIONER-----------
 // laver stjerner
 function createStar() {
-  const spawnWidth = canvas.width * 0.2; // how wide the “column” of stars is
+  const spawnWidth = canvas.width * 0.2; // Width hvor stjerner kan spawne
   const minX = canvas.width / 2 - spawnWidth / 2;
-  const x = minX + Math.random() * spawnWidth - 10; // subtract half the star size to keep it visually centered
-  const y = -20;
+  const x = minX + Math.random() * spawnWidth - 10; // Gør at stjernen er i midten
   stars.push({ x, y, size: 20 });
 }
 
@@ -342,7 +345,7 @@ function draw() {
   ctx.fillText(`${points}`, 20, 30);
 }
 
-// får stjerner til at beævæge sig nedad skærmen
+// får stjerner til at bevæge sig nedad skærmen
 function updateStars() {
   stars.forEach((star) => {
     star.y += 3;
