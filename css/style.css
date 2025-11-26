@@ -27,11 +27,6 @@
   --color--background: #cff7ff;
 }
 
-h1 {
-  font-family: var(--font-primary);
-  letter-spacing: 0.2em;
-}
-
 html,
 body {
   height: 100%;
