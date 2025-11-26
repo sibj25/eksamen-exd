@@ -132,9 +132,9 @@ footer {
 
 #closeModal {
   position: absolute;
-  top: 138px;
+  top: 130px;
   right: 720px;
-  font-size: 28px;
+  font-size: 40px;
   cursor: pointer;
 }
 
