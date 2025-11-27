@@ -31,10 +31,11 @@ html,
 body {
   height: 100%;
   background-color: var(--color--background);
-  background-image: url("../img/background.svg");
+  background-image: url("../img/new-background.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
+  /* Cover sørger for at baggrunden skalerer og udfylder skærmen responsivt */
+  background-size: cover;
   overflow: hidden;
 }
 
