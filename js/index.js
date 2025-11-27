@@ -116,97 +116,6 @@ const fishCards = [
 
 const gameScreen = document.getElementById("gameScreen");
 const infoScreen = document.getElementById("infoScreen");
-const startBtn = document.getElementById("startBtn");
-const backToMenu = document.getElementById("backToMenu");
-const select = document.getElementById("characterSelect");
-const choose = document.getElementById("chooseFish");
-// knapper
-
-// sounds for game
-const soundCoin = new Audio();
-soundCoin.src = "audio/foley-sound/coin-collect.wav";
-
-const soundClickBubble = new Audio();
-soundClickBubble.src = "audio/foley-sound/clicking-character-sound.wav";
-
-startBtn.addEventListener("click", function () {
-  soundClickBubble.play();
-  infoScreen.classList.add("hidden");
-  select.classList.remove("hidden");
-  startBtn.classList.add("hidden");
-});
-
-choose.addEventListener("click", function () {
-  if (selectedFishIndex === null) {
-    alert("Vælg en fisk først 🐟");
-    return;
-  }
-  select.classList.add("hidden");
-  gameScreen.classList.remove("hidden");
-  startGame();
-});
-
-backToMenu.addEventListener("click", function () {
-  gameRunning = false;
-  clearInterval(starInterval);
-  starInterval = null;
-  points = 0;
-  isGameOver = false;
-  stars = [];
-  infoScreen.classList.remove("hidden");
-  gameScreen.classList.add("hidden");
-  select.classList.add("hidden");
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  startBtn.classList.remove("hidden");
-});
-
-// character array af fiskene
-
-const characters = [
-  {
-    characName: "Kuglefisk",
-    image: "kuglefisk.svg",
-    gif: "kuglefisk/kuglefisk-gif-done.gif",
-  },
-  {
-    characName: "Gobi",
-    image: "gobi.svg",
-    gif: "gobifisk/gobifisk-gif-done.gif",
-  },
-  {
-    characName: "Rævefjæs",
-    image: "raevefjaes.svg",
-    gif: "rabbitfish/rabbitface-gif.gif",
-  },
-  {
-    characName: "Kejserfisk",
-    image: "kejserfisk.svg",
-    gif: "gobifisk/gobifisk-gif-done.gif",
-  },
-  {
-    characName: "Blå Cromis",
-    image: "chromis.svg",
-    gif: "gobifisk/gobifisk-gif-done.gif",
-  },
-  {
-    characName: "Kirurgfisk",
-    image: "kirurgfisk.svg",
-    gif: "gobifisk/gobifisk-gif-done.gif",
-  },
-  {
-    characName: "Klovnefisk",
-    image: "klovnefisk.svg",
-    gif: "gobifisk/gobifisk-gif-done.gif",
-  },
-  {
-    characName: "Pudsefisk",
-    image: "pudsefisk.svg",
-    gif: "gobifisk/gobifisk-gif-done.gif",
-  }
-];
-
-let selectedFishIndex = 0;
-
 const fishContainer = document.getElementById("infoScreen");
 
 // placering af fiskene på infoskærm
@@ -265,7 +174,7 @@ window.addEventListener("click", (e) => {
   }
 });
 
-// character selection
+/* // character selection
 const characterContainer = document.querySelector(".characterContainer");
 characters.forEach((fish, index) => {
   const option = document.createElement("div"); // laver et nyt div-element
@@ -286,8 +195,9 @@ characters.forEach((fish, index) => {
 
   characterContainer.appendChild(option); // tilføj til HTML’en
 });
+ */
 
-// Spillet
+/* // Spillet
 
 // dom-manipulation til game setup
 const canvas = document.getElementById("gameCanvas");
@@ -464,4 +374,5 @@ function startGame() {
     lastStarTime = 0;
     gameLoop();
   };
-}
+} 
+ */
