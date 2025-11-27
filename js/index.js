@@ -166,10 +166,14 @@ fishCards.forEach((fish) => {
 
 closeModal.addEventListener("click", () => {
   modal.classList.add("hidden");
+  modalVideo.pause();
+  modalVideo.currentTime = 0;
 });
 
 window.addEventListener("click", (e) => {
   if (e.target === modal) {
+      modalVideo.pause();
+      modalVideo.currentTime = 0;
     modal.classList.add("hidden");
   }
 });
