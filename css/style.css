@@ -102,6 +102,7 @@ footer {
   width: 320px;
   font-family: var(--font-secondary);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .modal-content img {
@@ -110,17 +111,34 @@ footer {
   margin-bottom: 10px;
 }
 
+#modalName {
+  margin-bottom: 15px;
+}
+
 #modalVideo {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#modalSize {
+  margin-bottom: 10px;
+}
+
+#modalFact1 {
+  margin-bottom: 10px;
+}
+
+#modalFact2 {
+  margin-bottom: 0;
 }
 
 #closeModal {
   position: absolute;
-  top: 130px;
-  right: 720px;
-  font-size: 40px;
+  top: 4px;
+  right: 26px;
+  font-size: 50px;
   cursor: pointer;
 }
 
