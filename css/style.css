@@ -113,6 +113,7 @@ footer {
 
 #modalName {
   margin-bottom: 16px;
+  text-transform: capitalize;
 }
 
 #modalVideo {
