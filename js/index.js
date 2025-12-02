@@ -35,27 +35,27 @@
 // Infocards array
 const fishCards = [
   {
-    fishName: "Kejserfisk",
+    fishName: "kejserfisk",
     fishSize: "20-30 cm",
     fishHabitat: "Lever ved koralrev",
     funFact1:
       "Føder sig af svampe og koraller og er kendt for sit farverige udseende.",
     funFact2:
       "Den ægte kejserfisk har en 'maske' over øjnene for at forvirre rovdyr.",
-    image: "kejserfisk.svg",
+    image: "kejserfisk.gif",
     video: "emperor-animation-novoice.mp4",
   },
   {
-    fishName: "Klovnefisk",
+    fishName: "klovnfisk",
     fishSize: "Op til 9 cm",
     fishHabitat: "Lever i Stillehavets koralrev i søanemonens tentakler",
-    funFact1: "Klovnefisk kan skifte køn, hvis hunnen dør eller forsvinder.",
+    funFact1: "Klovnfisken kan skifte køn, hvis hunnen dør eller forsvinder.",
     funFact2: "Klækker ud som små hanner og hunnerne er større end hannerne.",
-    image: "klovnefisk.svg",
-    video: "klovnefisk-foley-bubble-true.mp4",
+    image: "klovnfisk.gif",
+    video: "klovnfisk-foley-bubble-true.mp4",
   },
   {
-    fishName: "Kirurgfisk",
+    fishName: "kirurgfisk",
     fishSize: "15-30 cm",
     fishHabitat: "Tropiske koralrev over hele verden",
     funFact1:
@@ -65,7 +65,7 @@ const fishCards = [
     video: "kirurg-animation-novoice.mp4",
   },
   {
-    fishName: "Pudsefisk",
+    fishName: "pudsefisk",
     fishSize: "Op til 14 cm",
     fishHabitat: "Bor i koralrev",
     funFact1:
@@ -76,26 +76,26 @@ const fishCards = [
     video: "cleaner-animation-novoice.mp4",
   },
   {
-    fishName: "Blå-chromis",
+    fishName: "blå-chromis",
     fishSize: "Op til 8 cm",
     fishHabitat: "Koralrev",
     funFact1:
       "Den har en klar blå farve med sort stribe langs ryggen og forkedlet hale.",
     funFact2: "Lever hovedsageligt af små planktonorganismer.",
-    image: "chromis.svg",
-    video: "chromi-animation-novoice.mp4",
+    image: "chromis.gif",
+    video: "chromis-animation-novoice.mp4",
   },
   {
-    fishName: "Rævefjæs",
+    fishName: "rævefjæs",
     fishSize: "Op til 25 cm",
     fishHabitat: "Koralrev",
     funFact1: "Kendes på sin gul-orange krop og sort/hvide hoved.",
     funFact2: "Har svagt giftige pigstråler i ryggen som forsvar.",
-    image: "raevefjaes.svg",
+    image: "raevefisk.gif",
     video: "foxface-animatio-novoice.mp4",
   },
   {
-    fishName: "Sandspiser-gobi",
+    fishName: "sandspiser-gobi",
     fishSize: "5-8 cm",
     fishHabitat: "Sandbund ved koralrev",
     funFact1: "Kendt for at 'spise' sand for at finde føde.",
@@ -104,7 +104,7 @@ const fishCards = [
     video: "sandspiser-animation-novoice.mp4",
   },
   {
-    fishName: "Kuglefisk",
+    fishName: "kuglefisk",
     fishSize: "30-35 cm",
     fishHabitat: "Tropiske have og koralrev",
     funFact1: "Kan puste sig op til en kugle som forsvar.",
@@ -121,14 +121,14 @@ const fishContainer = document.getElementById("infoScreen");
 // placering af fiskene på infoskærm
 
 const positions = {
-  Kejserfisk: { left: "10%", top: "20%" },
-  Klovnefisk: { left: "45%", top: "40%" },
-  Kirurgfisk: { left: "65%", top: "40%" },
-  Pudsefisk: { left: "25%", top: "64%" },
-  "Blå-chromis": { left: "75%", top: "10%" },
-  Rævefjæs: { left: "70%", top: "76%" },
-  "Sandspiser-gobi": { left: "10%", top: "98%" },
-  Kuglefisk: { left: "80%", top: "60%" },
+  kejserfisk: { left: "10%", top: "20%" },
+  klovnefisk: { left: "45%", top: "40%" },
+  kirurgfisk: { left: "65%", top: "40%" },
+  pudsefisk: { left: "25%", top: "64%" },
+  "blå-chromis": { left: "75%", top: "10%" },
+  rævefjæs: { left: "70%", top: "76%" },
+  "sandspiser-gobi": { left: "10%", top: "98%" },
+  kuglefisk: { left: "80%", top: "60%" },
 };
 
 const modal = document.getElementById("fishModal");

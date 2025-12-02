@@ -30,8 +30,7 @@
 html,
 body {
   height: 100%;
-  background-color: var(--color--background);
-  background-image: url("../img/new-background.svg");
+  background-image: url("../img/new.background.svg");
   background-repeat: no-repeat;
   background-position: center;
   /* Cover sørger for at baggrunden skalerer og udfylder skærmen responsivt */
@@ -871,99 +870,35 @@ footer {
   }
 }
 
-.Kejserfisk {
+.kejserfisk {
   animation: swim5 15s linear infinite;
 }
 
-.Klovnefisk {
+.klovnfisk {
   animation: swim2 5s linear infinite;
 }
 
-.Kirurgfisk {
+.kirurgfisk {
   animation: swim7 15s linear infinite;
 }
 
-.Pudsefisk {
+.pudsefisk {
   animation: swim5 10s linear infinite;
 }
 
-.Blå-chromis {
+.blå-chromis {
   animation: swim4 18s linear infinite;
 }
 
-.Rævefjæs {
+.rævefjæs {
   animation: swim6 14s linear infinite;
 }
 
-.Sandspiser-gobi {
+.sandspiser-gobi {
   animation: swim5 17s linear infinite;
 }
 
-.Kuglefisk {
+.kuglefisk {
   animation: swim3 20s linear infinite;
 }
 
-#characterSelect {
-  display: flex;
-  flex-direction: column;
-  margin-top: 120px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  height: calc(100vh - 200px);
-}
-
-.characterContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 5rem;
-  align-items: flex-start;
-  justify-content: center;
-  order: 1;
-}
-
-.characterOption {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.characterOption img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain; /* Sørger for at billedet ikke bliver strukket */
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
-}
-
-.characterOption p {
-  font-family: var(--font-mali);
-  font-size: 14px;
-  color: #012a36;
-  text-align: center;
-}
-
-#playBtn {
-  margin-top: 1rem;
-  order: 2;
-}
-
-#chooseFish {
-  order: 3;
-  margin-top: auto;
-  margin-bottom: 2rem;
-}
-
-.characterOption.selected {
-  outline: 3px solid #00ffff;
-  border-radius: 10px;
-  transform: scale(1.05);
-  transition: transform 0.2s ease;
-}
-
-.characterOption.selected img {
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
-}
