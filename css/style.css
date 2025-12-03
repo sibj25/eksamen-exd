@@ -873,34 +873,42 @@ footer {
 
 .kejserfisk {
   animation: swim5 15s linear infinite;
+  z-index: 1;
 }
 
 .klovnfisk {
   animation: swim2 5s linear infinite;
+  z-index: 1;
 }
 
 .kirurgfisk {
   animation: swim7 15s linear infinite;
+  z-index: 1;
 }
 
 .pudsefisk {
   animation: swim5 10s linear infinite;
+  z-index: 1;
 }
 
 .blå-chromis {
   animation: swim4 18s linear infinite;
+  z-index: 1;
 }
 
 .rævefjæs {
   animation: swim6 14s linear infinite;
+  z-index: 1;
 }
 
 .sandspiser-gobi {
   animation: swim5 17s linear infinite;
+  z-index: 1;
 }
 
 .kuglefisk {
   animation: swim3 20s linear infinite;
+  z-index: 1;
 }
 
 /* skilt og skilt animation */
@@ -926,4 +934,51 @@ footer {
   100% { transform: translateY(0) rotate(-6deg); }
 }
 
+.boble1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  animation: rise 5s linear infinite;
+  left: 10%;
+  z-index: 0;
+}
+
+.boble2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  animation: rise 8s linear infinite;
+  left: 25%;
+  z-index: 0;
+}
+
+.boble3 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  animation: rise 6s linear infinite;
+  left: 50%;
+  z-index: 0;
+}
+
+.boble4 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  animation: rise 5.5s linear infinite;
+  right: 15%;
+  z-index: 0;
+
+}
+
+@keyframes rise {
+  0% {
+    bottom: 0;
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+  }
+}
 
