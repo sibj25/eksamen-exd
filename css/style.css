@@ -30,7 +30,7 @@
 html,
 body {
   height: 100%;
-  background-image: url("../img/new.background.gif");
+  background-image: url("../img/new-background.gif");
   background-repeat: no-repeat;
   background-position: center;
   /* Cover sørger for at baggrunden skalerer og udfylder skærmen responsivt */
